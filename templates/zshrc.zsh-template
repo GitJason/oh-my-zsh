@@ -1,15 +1,25 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=$HOME/github/oh-my-zsh
+ZSH_THEME="mine"
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+export GTK_IM_MODULE=scim
+export XMODIFILERS=@im=scim
+export LANG=en_US.UTF-8
+export LC_CTYPE=zh_CN.UTF-8
+export LC_ALL=
+export EDITOR="/usr/bin/vim"
+export TERM="xterm"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias tmux="tmux -2"
+alias tmuxn="tmux -2 new-session -s $USER"
+alias tmuxa="tmux a -t"
+alias gcc="time gcc -W -Wall"
+alias gcc+="gcc -v -pg -W -Wall"
+alias g++="time g++ -W -Wall"
+alias wee="weechat-curses"
+alias top="htop"
+alias dict="ydcv"
+alias sound="alsamixer"
+alias cmd=xfce4-terminal""
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -40,8 +50,6 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+#plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
