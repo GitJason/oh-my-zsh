@@ -4,6 +4,7 @@ function prompt_char {
 
 #PROMPT='%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%})$(git_prompt_info)%{$fg_bold[blue]%}%(!.%1~.%~) %_$(prompt_char)%{$reset_color%} '
 PROMPT='%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%})$(git_prompt_info)%{$fg_bold[blue]%}%(!.%1~.%~) %_$(prompt_char)%{$reset_color%} '
+RPROMPT="[%{$fg[green]%}%?%{$reset_color%}]"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="("
 ZSH_THEME_GIT_PROMPT_SUFFIX=") "
